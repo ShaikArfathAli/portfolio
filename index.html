@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main1.css">
+    <title>Portfolio</title>
+</head>    
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-name">Shaik Arfath Ali</div> <!-- Your name here -->
+            <div class="hamburger" id="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-items-list" id="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+            I’m Shaik Arfath Ali, a dedicated developer with expertise in web development and AI. 
+            My work blends innovation with technical skills, creating solutions that stand out. 
+            Browse my portfolio to see my latest projects and reach out if you're interested in collaboration.
+        </p>
+        <img src="./me.jpg" alt="Shaik Arfath Ali" class="profile-image">
+        <button class="button">Explore More</button>
+    </section>
+    
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a BTech student at Gayatri Vidya Parishad College Of Engineering (GVP), currently in my 5th semester, specializing in Artificial Intelligence and Machine Learning with a CGPA of 8.81. 
+            My studies provide me with a strong foundation in Programming and Machine Learning, and I am actively working on projects that apply these skills. 
+            Through this portfolio, I aim to showcase my work and passion for technology.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> A web application that tracks daily habits using JavaScript and Firebase.</li>
+            <li><strong>Project 2:</strong> A portfolio website built using HTML, CSS, and JavaScript.</li>
+            <li><strong>Project 3:</strong> An AI-driven exam grading system developed in Python.</li>
+        </ul>
+        <button class="button">View Projects</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: arfathalishaik@email.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/arfathali-shaik-9912a9291">My LinkedIn</a></p>
+        <p>+91 8919513626</p>
+        <button class="button">Get in Touch</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger-menu');
+            const navItems = document.getElementById('nav-items');
+
+            hamburger.addEventListener('click', () => {
+                navItems.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

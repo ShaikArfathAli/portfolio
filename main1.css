@@ -1,0 +1,235 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #333;
+    padding: 1rem 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Style for your name in the navbar */
+.nav-name {
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-weight: bold;
+}
+
+/* Align nav items next to your name */
+.nav-items-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-items-list li {
+    margin: 0 20px;
+}
+
+.nav-items-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-items-list a:hover {
+    color: black;
+    font-size: 20px;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#home {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+}
+
+#about {
+    background-color: #eaeaea;
+}
+
+#projects {
+    background-color: #d4d4d4;
+}
+
+#contact {
+    background-color: #c6c6c6;
+}
+
+/* Headings Styling */
+h1, h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #222;
+}
+
+/* Project List Styling */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects ul li {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+#projects ul li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons */
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: blanchedalmond;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Contact Info Styling */
+#contact p {
+    font-size: 1.2rem;
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+#contact a:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* Hover Effect for Sections */
+.section:hover {
+    background-color: #f7f7f7;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Smooth scrolling for the nav links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button in Home Section */
+#home .button {
+    margin-top: 20px;
+}
+
+/* Style for the profile image in the Home section */
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-items-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust if needed */
+        right: 0;
+        left: 0;
+        padding: 0;
+    }
+
+    .nav-items-list.active {
+        display: flex;
+    }
+
+    .nav-items-list li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
